@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brayden's 3D Printing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🖨️ Brayden's 3D Printing</h1>
+  <div id="product-list"></div>
+
+  <h2>🛒 Cart</h2>
+  <ul id="cart"></ul>
+  <button onclick="checkout()">Checkout</button>
+
+  <h2>🔑 Admin Login</h2>
+  <input type="password" id="admin-password" placeholder="Enter admin password" />
+  <button onclick="loginAdmin()">Login</button>
+
+  <div id="admin-panel" style="display:none;">
+    <h2>Admin Panel</h2>
+    <input type="text" id="new-name" placeholder="Product name" />
+    <input type="text" id="new-description" placeholder="Description" />
+    <input type="number" id="new-price" placeholder="Price" />
+    <input type="number" id="new-stock" placeholder="Stock" />
+    <button onclick="addProduct()">Add Product</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
